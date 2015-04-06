@@ -1,4 +1,4 @@
 # simple.py
 
-def ḧellö(name):
+def HellO(name):
     print('Hello', name)

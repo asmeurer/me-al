@@ -1,8 +1,6 @@
 # example.py
-try:
-    import meẗal
-except ImportError:
-    meẗal = __import__('met\u0308al')
+
+import meTal
 
 def decorator(func):
     def wrapper(*args, **kwargs):
@@ -10,13 +8,13 @@ def decorator(func):
         return func(*args, **kwargs)
     return wrapper
 
-# Apply meẗal to the module
-with meẗal(decorator):
+# Apply meTal to the module
+with meTal(decorator):
     import simple
 
-# Call the module with meẗal applied
+# Call the module with meTal applied
 simple.hello('Guido')
 
-# Import the module without meẗal
+# Import the module without meTal
 import simple
 simple.hello('Guido')
